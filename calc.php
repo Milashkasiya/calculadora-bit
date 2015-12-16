@@ -49,7 +49,7 @@ $str .= "<tbody>";
 
 foreach( $data as $key => $value )
 {
-    $str .= "<tr><td>$key</td><td>$value</td>";
+    $str .= "<tr><td>$key</td><td>$value</td></tr>";
 }
 $str .= "</tbody></table>";
 echo $str;
