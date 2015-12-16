@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora Bit</title>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form action="calc.php" method="post" class="form-inline text-center" role="form">
+                <fieldset>
+                    <legend class="text-info text-center">Calculadora Bit</legend>
+
+                    <div class="form-group">
+                        <label class="sr-only" for="cantidad">Cantidad</label>
+                        <input type="number" class="form-control" name="cantidad" id="cantidad" placeholder="Cantidad" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="unidades">Unidades</label>
+                        <select class="form-control" name="unidades" id="unidades">
+                            <option value="bits">Bits</option>
+                            <option value="bytes">Bytes</option>
+                            <option value="kilobits">Kilobits</option>
+                            <option value="kilobytes">Kilobytes</option>
+                            <option value="megabits">Megabits</option>
+                            <option value="megabytes">Megabytes</option>
+                            <option value="gigabits">Gigabits</option>
+                            <option value="gigabytes">Gigabytes</option>
+                            <option value="terabits">Terabits</option>
+                            <option value="terabytes">Terabytes</option>
+                            <option value="petabits">Petabits</option>
+                            <option value="petabytes">Petabytes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="notacion">Notacion</label>
+                        <select class="form-control" name="notacion" id="notacion">
+                            <option value="1024">Kilo es 1024</option>
+                            <option value="1000">Kilo es 1000</option>
+                        </select>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="content">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Unidades</th>
+                        <th>Valores</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>Bits</td><td></td></tr>
+                    <tr><td>Bytes</td><td></td></tr>
+                    <tr><td>Kilobits</td><td></td></tr>
+                    <tr><td>Kilobytes</td><td></td></tr>
+                    <tr><td>Megabits</td><td></td></tr>
+                    <tr><td>Megabytes</td><td></td></tr>
+                    <tr><td>Gigabits</td><td></td></tr>
+                    <tr><td>Gigabytes</td><td></td></tr>
+                    <tr><td>Terabits</td><td></td></tr>
+                    <tr><td>Terabytes</td><td></td></tr>
+                    <tr><td>Petabits</td><td></td></tr>
+                    <tr><td>Petabytes</td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
